@@ -9,18 +9,9 @@ public class LeFrontend {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digita la cantidad de producto: ");
-        Integer cantidadProducto = sc.nextInt();
+        JuiceCoctel coctel1 = new JuiceCoctel("BloodyMary",25000L,LocalDate.of(2023,3,4));
+        System.out.println(coctel1.calcularCosto(5));
 
-        // Asignar la fecha del dispositivo
-        LocalDate fecha = LocalDate.now();
-        System.out.println(fecha);
-        // Asignas fehcas especifica
-        LocalDate fecha2 = LocalDate.of(2023,2,24);
-        System.out.println(fecha2);
-        // Encontrar la diferencia entre 2 fechas
-        Long diferenciaEntreFechas = ChronoUnit.DAYS.between(fecha,fecha2);
-        System.out.println("La diferencia entre las dos fechas es: " + diferenciaEntreFechas + " dias");
 
     }
 }
